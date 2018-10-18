@@ -1,0 +1,27 @@
+$social-media-color: #a9a8a8;
+$social-media-bg: #f2f2f3;
+.contact-top {
+  border-bottom: 1px solid #ccc;
+  .social-media {
+    a {
+      background-color: $social-media-bg;
+      text-decoration: none;
+      text-align: center;
+      i {
+        width: 30px;
+        height: 30px;
+        color: $social-media-color;
+      }
+    }
+  }
+  .email-contact {
+    i {
+      color: $social-media-color;
+    }
+    span {
+      color: $social-media-color;
+      font-size: 18px;
+      font-weight: lighter;
+    }
+  }
+}

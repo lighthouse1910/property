@@ -1,0 +1,29 @@
+nav.navbar {
+  padding: 0 !important;
+  a.nav-link {
+    font-size: 18px;
+  }
+  .phone-place {
+    align-items: center;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+    img {
+      width: 25px;
+      height: 43px;
+    }
+    .callnow {
+      padding: 5px;
+      p {
+        margin-bottom: 0px;
+        font-weight: lighter;
+        font-size: 18px;
+        color: #000;
+      }
+      .text-blue {
+        font-size: 24px;
+        font-weight: 600;
+        color: #3a54a5;
+      }
+    }
+  }
+}

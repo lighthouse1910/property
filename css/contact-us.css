@@ -1,0 +1,10 @@
+.contact-us {
+  background: url("../images/bg_testimonial_V1.png") center center no-repeat;
+  background-size: cover; }
+  .contact-us .btn-contact {
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 25px;
+    background-color: #fbac2e; }
+
+/*# sourceMappingURL=contact-us.css.map */

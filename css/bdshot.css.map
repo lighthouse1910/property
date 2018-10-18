@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,SAAU;EACR,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,SAAS;EACjB,UAAU,EAAE,MAAM;EAClB,oBAAW;IACT,KAAK,EAAE,IAAI;IACX,aAAa,EAAE,GAAG;IAClB,OAAO,EAAE,QAAQ;IACjB,gBAAgB,EATL,OAAO",
+"sources": ["bdshot.scss"],
+"names": [],
+"file": "bdshot.css"
+}

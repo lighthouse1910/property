@@ -1,0 +1,42 @@
+$btn-search-bg: #fbac2f;
+$form-title-bg: #131944;
+.banner-top {
+  .banner-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url('../images/slide_v1\ copy.png') center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    .form-search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .form-title {
+        background-color: $form-title-bg;
+        border-radius: 30px;
+        display: inline;
+        padding: 15px 20px;
+        color: #fff;
+        font-size: 27px;
+        transform: translateY(34px);
+      }
+      form {
+        border-radius: 10px;
+        padding: 50px 40px;
+        .one-select {
+          margin-bottom: 15px;
+        }
+        .bootstrap-select {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        .btn-search {
+          background-color: $btn-search-bg;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

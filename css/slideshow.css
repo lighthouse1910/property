@@ -1,0 +1,42 @@
+.one-slide {
+  flex-wrap: wrap-reverse;
+  flex-shrink: 1; }
+  .one-slide .left {
+    flex-basis: 50%;
+    margin-top: 20px; }
+    .one-slide .left img {
+      min-width: 500px;
+      width: 100%;
+      height: 100%; }
+    .one-slide .left .price {
+      position: absolute;
+      background-color: #efae34;
+      padding: 5px 17px;
+      color: #fff;
+      opacity: 0.8;
+      transform: translateY(-34px); }
+  .one-slide .right {
+    flex-basis: 50%;
+    padding: 0 15px;
+    flex-grow: 1; }
+    .one-slide .right .right-top {
+      font-size: 20px;
+      font-weight: 400; }
+      .one-slide .right .right-top p.name {
+        font-size: 40px;
+        font-weight: 600; }
+      .one-slide .right .right-top p.info {
+        font-size: 20px;
+        font-weight: lighter;
+        font-style: italic; }
+    .one-slide .right .right-bot div {
+      margin-left: 25px; }
+    .one-slide .right .right-bot .btn-orange {
+      background-color: #fbac2f;
+      color: #fff;
+      border-radius: 7px;
+      padding: 0 20px;
+      font-size: 18px;
+      text-transform: uppercase; }
+
+/*# sourceMappingURL=slideshow.css.map */

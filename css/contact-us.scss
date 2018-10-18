@@ -1,0 +1,12 @@
+$btn-wmore-bg: #fbac2e;
+$btn-contact-bg: #fbac2e;
+.contact-us {
+  background: url('../images/bg_testimonial_V1.png') center center no-repeat;
+  background-size: cover;
+  .btn-contact {
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 25px;
+    background-color: $btn-contact-bg;
+  }
+}
