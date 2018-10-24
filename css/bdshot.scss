@@ -3,10 +3,12 @@ $btn-wmore-bg: #fbac2e;
   display: block;
   margin: 30px auto;
   text-align: center;
-  .btn-wmore {
-    color: #fff;
-    border-radius: 7px;
-    padding: 5px 25px;
-    background-color: $btn-wmore-bg;
+}
+
+.card {
+  width: unset !important;
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
   }
 }

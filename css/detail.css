@@ -1,0 +1,21 @@
+.detail .detail-wrapper {
+  margin: 5% 0; }
+  .detail .detail-wrapper .main-content h1 {
+    font-size: 34px;
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .detail .detail-wrapper .main-content hr {
+    margin-top: 0;
+    border-top: 2px solid #000; }
+  .detail .detail-wrapper .main-content .detail-content h2 {
+    font-size: 18px;
+    font-weight: bold; }
+  .detail .detail-wrapper .main-content .detail-content p {
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .detail .detail-wrapper .main-content .detail-content img {
+    width: 100%;
+    margin-bottom: 30px; }
+
+/*# sourceMappingURL=detail.css.map */

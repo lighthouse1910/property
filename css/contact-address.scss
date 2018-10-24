@@ -1,0 +1,22 @@
+.contact-address-wrapper {
+  color: #0000ff;
+  border: 1px solid #ccc;
+  margin: 5% 0;
+  h2 {
+    position: relative;
+    &::before {
+      width: 120px;
+      content: '';
+      background-color: #0000ff;
+      height: 10px;
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+  .left {
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

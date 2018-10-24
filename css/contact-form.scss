@@ -1,0 +1,18 @@
+.contact-form-wrapper {
+  padding: 5% 3%;
+  border: 1px solid #cdcccc;
+  margin: 5% 0;
+  color: #3953a4;
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  form {
+    label {
+      font-style: italic;
+    }
+    .btn-hp {
+      margin: 0 !important;
+    }
+  }
+}

@@ -5,6 +5,10 @@
 @import 'contact-us';
 @import 'footer';
 @import 'menu-top';
+@import 'contact-form';
+@import 'contact-address';
+@import 'project';
+@import 'detail.scss';
 .bg-w {
   background-color: #fff;
 }
@@ -20,14 +24,18 @@
   max-width: 100%;
 }
 
-h2.h2-title {
-  margin: 35px auto;
+.h2-title {
+  margin: 5% auto !important;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
 .pd-20 {
   padding: 20px;
+}
+.pdy-10 {
+  padding: 10px 0;
 }
 .logo {
   width: 180px;
@@ -35,6 +43,29 @@ h2.h2-title {
 }
 .bg-grey {
   background-color: #fafbfb;
+}
+.cl-white {
+  color: #fff;
+}
+.btn-hp {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fbac2e;
+  padding: 10px 20px;
+  margin: 3% auto;
+  border-radius: 7px;
+}
+.icon-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  span {
+    display: inline-flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
+    }
+  }
 }
 @font-face {
   font-family: Muli;

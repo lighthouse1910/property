@@ -1,13 +1,19 @@
 .contact-top {
   border-bottom: 1px solid #ccc; }
-  .contact-top .social-media a {
-    background-color: #f2f2f3;
-    text-decoration: none;
-    text-align: center; }
-    .contact-top .social-media a i {
-      width: 30px;
-      height: 30px;
-      color: #a9a8a8; }
+  .contact-top .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .contact-top .social-media a {
+      margin-right: 5px;
+      background-color: #f2f2f3;
+      text-decoration: none;
+      text-align: center; }
+      .contact-top .social-media a i {
+        width: 30px;
+        height: 30px;
+        color: #a9a8a8;
+        line-height: 30px; }
   .contact-top .email-contact i {
     color: #a9a8a8; }
   .contact-top .email-contact span {

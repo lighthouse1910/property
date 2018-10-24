@@ -3,7 +3,11 @@ $social-media-bg: #f2f2f3;
 .contact-top {
   border-bottom: 1px solid #ccc;
   .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     a {
+      margin-right: 5px;
       background-color: $social-media-bg;
       text-decoration: none;
       text-align: center;
@@ -11,6 +15,7 @@ $social-media-bg: #f2f2f3;
         width: 30px;
         height: 30px;
         color: $social-media-color;
+        line-height: 30px;
       }
     }
   }

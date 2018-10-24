@@ -8,8 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -89,8 +90,8 @@
                 <div class="form-title">
                     Property Searching
                 </div>
-                <form action="" class="bg-w">
-                    <div class="container">
+                <form action="" class="bg-w container">
+                    <div class="">
                         <div class="row">
                             <form action="">
                                 <div class="one-select col-md-6 col-lg-3 text-sm-center">
@@ -158,10 +159,11 @@
     <div class="typicalProjects bg-w ">
         <h2 class="h2-title">Typical Project</h2>
         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
@@ -173,7 +175,7 @@
                             </div>
                             <div class="right">
                                 <div class="right-top text-right text-sm-center">
-                                    <p class="name">Vinpearl Villa</p>
+                                    <p class="name">Vinpearl2 Villa</p>
                                     <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
                                         itaque
                                         dolorem
@@ -196,13 +198,19 @@
                                 </div>
                                 <div class="right-bot d-flex justify-content-end justify-content-sm-center">
                                     <div class="m2">
-                                        <i class="fa fa-ruler"></i> 100 m2
+                                        <span>
+                                            <img src="images/icon-1_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 100 m2</span>
                                     </div>
                                     <div class="room">
-                                        <i class="fa fa-room"></i> 9 phong
+                                        <span>
+                                            <img src="images/icon-2_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 9 phong </span>
                                     </div>
                                     <div class="btn-detail">
-                                        <button class="btn-orange btn">Chi tiet</button>
+                                        <button class="btn-hp btn">Chi tiet</button>
                                     </div>
                                 </div>
                             </div>
@@ -239,13 +247,19 @@
                                 </div>
                                 <div class="right-bot d-flex justify-content-end justify-content-sm-center">
                                     <div class="m2">
-                                        <i class="fa fa-ruler"></i> 100 m2
+                                        <span>
+                                            <img src="images/icon-1_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 100 m2</span>
                                     </div>
                                     <div class="room">
-                                        <i class="fa fa-room"></i> 9 phong
+                                        <span>
+                                            <img src="images/icon-2_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 9 phong </span>
                                     </div>
                                     <div class="btn-detail">
-                                        <button class="btn-orange btn">Chi tiet</button>
+                                        <button class="btn-hp btn">Chi tiet</button>
                                     </div>
                                 </div>
                             </div>
@@ -282,13 +296,19 @@
                                 </div>
                                 <div class="right-bot d-flex justify-content-end justify-content-sm-center">
                                     <div class="m2">
-                                        <i class="fa fa-ruler"></i> 100 m2
+                                        <span>
+                                            <img src="images/icon-1_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 100 m2</span>
                                     </div>
                                     <div class="room">
-                                        <i class="fa fa-room"></i> 9 phong
+                                        <span>
+                                            <img src="images/icon-2_03.png" alt="" class="img-fluid icon-img">
+                                        </span>
+                                        <span> 9 phong </span>
                                     </div>
                                     <div class="btn-detail">
-                                        <button class="btn-orange btn">Chi tiet</button>
+                                        <button class="btn-hp btn">Chi tiet</button>
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +323,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="bdsHot bg-grey">
@@ -311,7 +331,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
+                        <img class="card-img-top" src="images/bdshot4.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">ABCZXJHS #12312</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="d-flex pdy-10 justify-content-between">
+                                <div class="icon-wrap">
+                                    <span>
+                                        <img src="images/icon-1_03.png" alt="" class="img-fluid icon-img">
+                                    </span>
+                                    <span> <strong>100 m2</strong></span>
+                                </div>
+                                <div class="icon-wrap">
+                                    <span>
+                                        <img src="images/icon-2_03.png" alt="" class="img-fluid icon-img">
+                                    </span>
+                                    <span> <strong>9 phong</strong> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
                         <img class="card-img-top" src="images/bdshot4.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the
@@ -320,16 +364,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/bdshot4.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img class="card-img-top" src="images/bdshot4.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the
@@ -339,30 +374,30 @@
                 </div>
             </div>
             <div class="btn-more">
-                <button class="btn btn-wmore">
+                <button class="btn btn-hp">
                     xem them
                 </button>
             </div>
         </div>
     </div>
-    <div class="contact-us text-center">
-        <h2>co hoi dau tu</h2>
+    <div class="contact-us text-center pd-20">
+        <h2 class='h2-title cl-white'>co hoi dau tu</h2>
         <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, amet? Similique omnis veritatis
+            <p class="cl-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, amet? Similique omnis
+                veritatis
                 nesciunt sunt consectetur asperiores cumque voluptatibus, reprehenderit porro voluptatum ex recusandae
                 quasi dignissimos cupiditate nobis possimus quis.</p>
-
-            <button class="btn btn-contact">
+            <button class="btn btn-hp">
                 contact us
             </button>
         </div>
     </div>
     <div class="customer">
-        <h2>Khach hang - doi tac</h2>
-        <div class="container">
+        <h2 class='h2-title'>Khach hang - doi tac</h2>
+        <div class="container pd-20 mb-3">
             <div class="row">
                 <div class="col-sm-3 text-center pd-20">
-                    <img src="images/logo_03.png" alt="" class="img-fluid">
+                    <img src="images/logo_07.png" alt="" class="img-fluid">
                     <div class="customer-info">
                         <strong>Fuck You</strong>
                     </div>
@@ -375,26 +410,26 @@
                 </div>
                 <div class="col-sm-3 text-center pd-20"><img src="images/logo_07.png" alt="" class="img-fluid"></div>
                 <div class="col-sm-3 text-center pd-20"><img src="images/logo_10.png" alt="" class="img-fluid"></div>
-                <div class="col-sm-3 text-center pd-20"><img src="images/logo_03.png" alt="" class="img-fluid"></div>
-                <div class="col-sm-3 text-center pd-20"><img src="images/logo_03.png" alt="" class="img-fluid"></div>
-                <div class="col-sm-3 text-center pd-20"><img src="images/logo_03.png" alt="" class="img-fluid"></div>
-                <div class="col-sm-3 text-center pd-20"><img src="images/logo_03.png" alt="" class="img-fluid"></div>
+                <div class="col-sm-3 text-center pd-20"><img src="images/logo_05.png" alt="" class="img-fluid"></div>
+                <div class="col-sm-3 text-center pd-20"><img src="images/logo_05.png" alt="" class="img-fluid"></div>
+                <div class="col-sm-3 text-center pd-20"><img src="images/logo_05.png" alt="" class="img-fluid"></div>
+                <div class="col-sm-3 text-center pd-20"><img src="images/logo_05.png" alt="" class="img-fluid"></div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="container">
+        <div class="container pd-20">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <h3 class='title-footer'>About</h3>
-                    <img src="images/prj-logo_03.png" alt="" class="img-fluid logo">
+                    <h3 class='title-footer'><a href="">About</a></h3>
+                    <img src="images/logo.png" alt="" class="img-fluid logo mb-4">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In debitis corrupti reiciendis
                         praesentium illo nihil esse magnam non cum inventore quis sunt sapiente, expedita voluptatem!
                         At illo laborum sed quod!</p>
                 </div>
                 <div class="col-sm-6 col-md-2">
-                    <h3 class="title-footer">Lien ket</h3>
-                    <ul>
+                    <h3 class="title-footer"><a href="">Lien ket</a></h3>
+                    <ul class="footer-ul">
                         <li><a href="http://">Home page </a></li>
                         <li><a href="http://">Home page</a></li>
                         <li><a href="http://">Home page</a></li>
@@ -402,8 +437,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <h3 class="title-footer">Project</h3>
-                    <ul>
+                    <h3 class="title-footer"><a href="">Project</a></h3>
+                    <ul class="footer-ul">
                         <li><a href="http://">Home page </a></li>
                         <li><a href="http://">Home page</a></li>
                         <li><a href="http://">Home page</a></li>
@@ -413,8 +448,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <h3 class="title-footer">Contact</h3>
-                    <ul>
+                    <h3 class="title-footer"><a href="">Contact</a></h3>
+                    <ul class="footer-ul">
                         <li><a href="http://">Home page </a></li>
                         <li><a href="http://">Home page</a></li>
                         <li><a href="http://">Home page</a></li>
@@ -424,16 +459,16 @@
             </div>
         </div>
     </div>
-    <div class="copyright text-center">
+    <div class="copyright text-center pdy-10">
         © 2018. Designed by CMHdesign - Hotline 0906010016
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

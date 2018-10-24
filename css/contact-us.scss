@@ -1,7 +1,12 @@
 $btn-wmore-bg: #fbac2e;
 $btn-contact-bg: #fbac2e;
 .contact-us {
-  background: url('../images/bg_testimonial_V1.png') center center no-repeat;
+  background: linear-gradient(
+      to right,
+      rgba(94, 111, 163, 0.7),
+      rgba(94, 111, 163, 0.7)
+    ),
+    url('../images/bg_testimonial_V1.png') center center no-repeat;
   background-size: cover;
   .btn-contact {
     color: #fff;

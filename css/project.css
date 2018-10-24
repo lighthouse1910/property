@@ -1,0 +1,74 @@
+.project-wrapper {
+  margin: 5% 0;
+  font-weight: 500; }
+  .project-wrapper .selection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .project-wrapper .selection ul li {
+      background-color: #3d51a3;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      margin-bottom: 5px;
+      border: 1px solid #fff; }
+      .project-wrapper .selection ul li.active {
+        background-color: #fbac2e; }
+  .project-wrapper .main-content {
+    padding: 0; }
+    .project-wrapper .main-content .title h2 {
+      color: #fbac2e;
+      font-size: 34px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .project-wrapper .main-content .oneItem {
+      border: 1px solid #ccc;
+      margin: 0; }
+      .project-wrapper .main-content .oneItem .left {
+        padding: 0;
+        display: flex;
+        flex: 1; }
+      .project-wrapper .main-content .oneItem .itemDetail h3 {
+        font-size: 24px;
+        font-weight: 600; }
+    .project-wrapper .main-content .pagination {
+      align-items: center; }
+      .project-wrapper .main-content .pagination .line {
+        flex: 1;
+        background-color: #ccc;
+        height: 1px; }
+      .project-wrapper .main-content .pagination .paginator {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        padding: 3px 10px; }
+        .project-wrapper .main-content .pagination .paginator ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: flex; }
+          .project-wrapper .main-content .pagination .paginator ul li {
+            margin-right: 8px; }
+            .project-wrapper .main-content .pagination .paginator ul li.active {
+              color: #373772;
+              text-decoration: underline;
+              font-weight: 600; }
+        .project-wrapper .main-content .pagination .paginator i {
+          line-height: unset !important;
+          text-align: center; }
+
+.relatedNews h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fbac2e;
+  text-transform: uppercase;
+  position: relative; }
+  .relatedNews h2::before {
+    width: 50px;
+    content: '';
+    background-color: #fbac2e;
+    height: 5px;
+    position: absolute;
+    bottom: -5px; }
+
+/*# sourceMappingURL=project.css.map */
