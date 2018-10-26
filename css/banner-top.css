@@ -28,6 +28,7 @@
         border-radius: 5px; }
       .banner-top .banner-wrapper .form-search form .btn-search {
         background-color: #fbac2f;
-        color: #fff; }
+        color: #fff;
+        width: 220px; }
 
 /*# sourceMappingURL=banner-top.css.map */

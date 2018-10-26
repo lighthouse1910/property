@@ -57,18 +57,4 @@
           line-height: unset !important;
           text-align: center; }
 
-.relatedNews h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #fbac2e;
-  text-transform: uppercase;
-  position: relative; }
-  .relatedNews h2::before {
-    width: 50px;
-    content: '';
-    background-color: #fbac2e;
-    height: 5px;
-    position: absolute;
-    bottom: -5px; }
-
 /*# sourceMappingURL=project.css.map */

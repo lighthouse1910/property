@@ -1,4 +1,30 @@
 $color-detail-bg: #fbac2f;
+.slick-dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding-left: 0;
+  li {
+    button {
+      border-radius: 50%;
+      outline: none;
+      border: 1px solid #000;
+      background-color: transparent;
+      color: transparent;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    &.slick-active {
+      button {
+        background-color: #000;
+        color: #000;
+      }
+    }
+  }
+}
 .one-slide {
   flex-wrap: wrap-reverse;
   flex-shrink: 1;

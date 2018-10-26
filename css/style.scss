@@ -59,6 +59,7 @@
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-right: 20px;
   span {
     display: inline-flex;
     align-items: center;
@@ -87,4 +88,45 @@ body {
   padding: 0;
   font-family: Muli;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  textarea {
+    height: 210px !important;
+  }
+}
+
+.relatedNews {
+  h2 {
+    a {
+      font-size: 30px;
+      font-weight: 600;
+      color: #fbac2e;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    position: relative;
+    &::before {
+      width: 50px;
+      content: '';
+      background-color: #fbac2e;
+      height: 5px;
+      position: absolute;
+      bottom: -5px;
+    }
+  }
+  .content {
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 15px;
+    margin: 0;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+.w-220 {
+  width: 220px;
+  margin: 0 auto;
 }
