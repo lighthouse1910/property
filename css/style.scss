@@ -130,3 +130,8 @@ body {
   width: 220px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  .hide-md-part {
+    display: none;
+  }
+}
