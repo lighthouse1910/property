@@ -1,42 +1,44 @@
 .detail-wrapper {
   margin: 5% 0; }
-  .detail-wrapper .main-content h1 {
-    font-size: 34px;
-    margin: 0 !important;
-    text-transform: uppercase;
-    font-weight: bold; }
-  .detail-wrapper .main-content hr {
-    margin-top: 0;
-    border-top: 2px solid #000; }
-  .detail-wrapper .main-content .detail-content h2 {
-    font-size: 18px;
-    font-weight: bold; }
-  .detail-wrapper .main-content .detail-content p {
-    font-size: 16px;
-    margin-bottom: 30px; }
-  .detail-wrapper .main-content .detail-content img {
-    width: 100%;
-    margin-bottom: 30px; }
-  .detail-wrapper .main-content .detail-content .summary-menu {
-    border: 1px solid #3953a4;
-    background-color: #ebebeb;
-    border-radius: 1px;
-    margin-bottom: 20px;
-    padding: 20px 40px 20px 20px;
-    display: inline-block;
-    font-size: 18px; }
-    .detail-wrapper .main-content .detail-content .summary-menu .title {
+  .detail-wrapper .main-content {
+    padding-right: 35px; }
+    .detail-wrapper .main-content h1 {
+      font-size: 34px;
+      margin: 0 !important;
       text-transform: uppercase;
-      color: #000;
-      margin: 15px 0; }
-    .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 {
-      padding: 0;
-      list-style-type: none; }
-      .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 a {
+      font-weight: bold; }
+    .detail-wrapper .main-content hr {
+      margin-top: 0;
+      border-top: 2px solid #000; }
+    .detail-wrapper .main-content .detail-content h2 {
+      font-size: 18px;
+      font-weight: bold; }
+    .detail-wrapper .main-content .detail-content p {
+      font-size: 16px;
+      margin-bottom: 30px; }
+    .detail-wrapper .main-content .detail-content img {
+      width: 100%;
+      margin-bottom: 30px; }
+    .detail-wrapper .main-content .detail-content .summary-menu {
+      border: 1px solid #3953a4;
+      background-color: #ebebeb;
+      border-radius: 1px;
+      margin-bottom: 20px;
+      padding: 20px 40px 20px 20px;
+      display: block;
+      font-size: 18px; }
+      .detail-wrapper .main-content .detail-content .summary-menu .title {
         text-transform: uppercase;
-        text-decoration: none;
-        color: #3953a4; }
-      .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 .ul-level2 {
+        color: #000;
+        margin: 15px 0; }
+      .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 {
+        padding: 0;
         list-style-type: none; }
+        .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #3953a4; }
+        .detail-wrapper .main-content .detail-content .summary-menu .ul-level1 .ul-level2 {
+          list-style-type: none; }
 
 /*# sourceMappingURL=detail.css.map */
