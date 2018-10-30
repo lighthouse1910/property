@@ -53,3 +53,49 @@ div.oneItem{
     flex-direction: column;
     justify-content: center;
 }
+.carousel{
+    margin-bottom: 30px !important;
+}
+.carousel-indicators{
+    bottom: -45px !important;
+}
+.carousel-indicators li {
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+.carousel-indicators li.active{
+    background-color: #000;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    margin: 0;
+    display: none;
+}
+.overlay .d-modal {
+    box-shadow: 0px 0px 4px 1px #475f9e;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #5974f9;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.overlay .d-modal span.close-modal {
+    cursor: pointer;
+}

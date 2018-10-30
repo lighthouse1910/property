@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.selectpicker1').selectpicker();
-  // $('#carouselExampleIndicators').carousel();
+  $('#carouselExampleIndicators').carousel();
   $('.multiple-items').slick({
     draggable: true,
     autoplay: true,
@@ -39,3 +39,13 @@ $(document).ready(function() {
     }
   });
 });
+
+function hideModal() {
+    const modal = document.querySelector('.overlay');
+    modal.style.display = 'none';
+}
+
+function showModal() {
+    const modal = document.querySelector('.overlay');
+    modal.style.display = 'block';
+}
