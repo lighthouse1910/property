@@ -1,0 +1,55 @@
+.btn-hp:hover, .btn-hp:focus{
+    box-shadow: inset 0px -30px 0 0 #3954a5, inset 0px 30px 0 0 #3954a5;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);;
+    text-shadow: 0px 6px 6px black;
+}
+.navbar, .navbar-nav{
+    height: 70px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-item.active, .nav-item:hover, .nav-item:focus{
+    background-color: #3954a5;
+}
+.nav-item.active > .nav-link, .nav-item:hover > .nav-link, .nav-item:focus > .nav-link {
+    color: #fff !important;
+}
+.nav-link{
+    text-transform: uppercase;
+}
+.logo-footer-part {
+    flex-wrap: wrap;
+}
+.logo-footer-part i {
+    font-size: 50px;
+    line-height: 0.85;
+}
+.contact-info-wrapper {
+    font-size: 17px;
+}
+div.oneItem{
+    min-height: 160px !important;
+    max-height: 185px ;
+}
+.oneItem h3{
+    padding-top: 5px
+}
+.oneItem p {
+    max-height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.a-reset{
+    color: #000;
+    text-decoration: none !important;
+}
+.a-reset:hover{
+    color: #000;
+}
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
