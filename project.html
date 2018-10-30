@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
   <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -156,7 +157,7 @@
     <div class="container">
       <div class="project-wrapper">
         <div class="row">
-          <div class="col-lg-3 hide-md-part">
+          <div class="col-lg-3 hide-md-part" data-aos="fade-up" data-aos-duration="1000">
             <div class="selection">
               <ul>
                 <li>Khu du lich nghi duong</li>
@@ -168,7 +169,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-8 col-lg-6 main-content">
+          <div class="col-md-8 col-lg-6 main-content " data-aos="fade-up" data-aos-duration="1200">
             <div class="title">
               <h2>gioi thieu</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque explicabo ea dolorum, adipisci neque
@@ -286,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 relatedNews">
+          <div class="col-md-3 relatedNews" data-aos="fade-left" data-aos-duration="1000">
             <div class="investmentConsultancy">
               <h2><a href="">Tư vấn đầu tư</a></h2>
               <div class="content mt-3">
@@ -407,9 +408,14 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

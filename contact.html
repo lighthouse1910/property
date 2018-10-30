@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
   <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/seneyorab.css">
   <title>Hello, world!</title>
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -151,7 +156,7 @@
       </div>
     </div>
   </div>
-  <div class="contact-form">
+  <div class="contact-form" data-aos="flip-up" data-aos-duration="1000">
     <div class="container">
       <div class="contact-form-wrapper">
         <h1>Liên hệ</h1>
@@ -159,27 +164,30 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label for="name">Ho ten</label>
+                <label for="name">Họ tên</label>
                 <input type="text" class="form-control" id="name">
+                <p class="error-label--name error-label"></p>
               </div>
               <div class="form-group">
-                <label for="name">SDT</label>
+                <label for="name">Số điện thoại</label>
                 <input type="text" class="form-control" id="phone">
+                <p class="error-label--phone error-label"></p>
               </div>
               <div class="form-group">
                 <label for="name">Email</label>
                 <input type="text" class="form-control" id="email">
+                <p class="error-label--email error-label"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label for="msg">Message</label>
-                <textarea name="" id="msg" rows="7.5" class="form-control"></textarea>
+                <label for="msg">Lời nhắn</label>
+                <textarea name="" id="msg" class="form-control"></textarea>
               </div>
             </div>
           </div>
           <div class="row justify-content-end mx-0">
-            <button class="btn-hp btn ml-auto">
+            <button class="btn-hp btn ml-auto" onClick="validateForm()" type="button">
               Gửi
             </button>
           </div>
@@ -187,7 +195,7 @@
       </div>
     </div>
   </div>
-  <div class="contact-address">
+  <div class="contact-address" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container">
       <div class="contact-address-wrapper">
         <div class="row">
@@ -278,7 +286,46 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const email_regex = new RegExp(/^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$/gm);
+    const phone_regex = new RegExp(/^((\+){0,1}((841[0-9]{9})|((849|848)[0-9]{8})))$|^((09|08|03)[0-9]{8})$|^(01[0-9]{9})$/gm);
+    const name_regex = new RegExp(/[a-zA-Z +àáảạãâầấẩậẫđèéẻẹẽêềếểệễìíỉịĩòóỏọõơờớởợỡôồốổộỗùúủụũưừứửựữỳýỷỵỹ]/g);
+    const errLabelName = document.querySelector('.error-label--name');
+    const errLabelPhone = document.querySelector('.error-label--phone');
+    const errLabelEmail = document.querySelector('.error-label--email');
+    function validateForm() {
+      if (validate('name', name_regex, errLabelName, 'họ tên') &&
+        validate('phone', phone_regex, errLabelPhone, 'số điện thoại') &&
+        validate('email', email_regex, errLabelEmail, 'email')) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function validate(id, regex, errorLabel, string) {
+      if (document.getElementById(id).value === '') {
+        errorLabel.innerHTML = 'Mời nhập ' + string;
+        document.getElementById(id).focus();
+        return false;
+      } else {
+        if (!regex.test(document.getElementById(id).value)) {
+          errorLabel.innerHTML = 'Nhập sai ' + string + ', mời bạn nhập lại';
+          document.getElementById(id).focus();
+          return false;
+        } else {
+          errorLabel.innerHTML = '';
+          return true;
+        }
+      }
+    }
+
+  </script>
 </body>
 
 </html>

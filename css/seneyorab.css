@@ -1,0 +1,25 @@
+.fab.fa-facebook-f:hover,
+.fab.fa-facebook-f:focus {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.fab.fa-twitter:hover,
+.fab.fa-twitter:focus {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.fab.fa-google-plus-g:hover,
+.fab.fa-google-plus-g:focus {
+  background-color: #ff4343;
+  color: #fff;
+}
+
+.footer-ul a:hover {
+  color: #fbac2e;
+}
+
+.error-label {
+  color: red;
+}

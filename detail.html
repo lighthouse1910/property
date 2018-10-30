@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -155,7 +156,7 @@
         <div class="container">
             <div class="detail-wrapper">
                 <div class="row ">
-                    <div class="col-md-9 main-content">
+                    <div class="col-md-9 main-content" data-aos="fade-up" data-aos-duration="1000">
                         <h1>Tư vấn đầu tư</h1>
                         <hr>
                         <div class="detail-content">
@@ -183,7 +184,7 @@
                                 repellendus eaque minima voluptates, eius corrupti.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 relatedNews">
+                    <div class="col-md-3 relatedNews" data-aos="fade-left" data-aos-duration="1200">
                         <div class="investmentConsultancy">
                             <h2><a href="">Tư vấn đầu tư</a></h2>
                             <div class="content mt-3">
@@ -248,7 +249,7 @@
     </div>
     <div class="contact-form">
         <div class="container">
-            <div class="contact-form-wrapper">
+            <div class="contact-form-wrapper" data-aos="flip-up" data-aos-duration="1000">
                 <h1>Liên hệ</h1>
                 <form action="">
                     <div class="row">
@@ -342,7 +343,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
