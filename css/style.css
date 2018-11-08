@@ -35,13 +35,13 @@
   background-size: cover;
   min-height: 500px;
 }
-.banner-top .banner-wrapper .form-search {
+.form-search {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
-.banner-top .banner-wrapper .form-search .form-title {
+.form-search .form-title {
   background-color: #131944;
   border-radius: 30px;
   display: inline;
@@ -50,44 +50,66 @@
   font-size: 27px;
   transform: translateY(34px);
 }
-.banner-top .banner-wrapper .form-search form {
+.form-search form {
   border-radius: 10px;
   padding: 50px 40px;
+  border: 1px solid #ccc;
 }
-.banner-top .banner-wrapper .form-search form .one-select {
+.form-search form .one-select {
   margin-bottom: 15px;
 }
-.banner-top .banner-wrapper .form-search form .bootstrap-select {
+.form-search form .bootstrap-select {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.banner-top .banner-wrapper .form-search form .btn-search {
+.form-search form .btn-search {
   background-color: #fbac2f;
   color: #fff;
   width: 220px;
 }
+.slick-arrow {
+  position: absolute;
 
+  bottom: 0;
+  top: 0;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  z-index: 10000;
+  background: transparent;
+  color: #fff;
+}
+.arrow-left {
+  left: 5px;
+}
+.arrow-right {
+  right: 5px;
+}
 .slick-dots {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
   padding-left: 0;
+  position: absolute;
+  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .slick-dots li button {
   border-radius: 50%;
   outline: none;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   background-color: transparent;
   color: transparent;
+  width: 15px;
   margin-right: 10px;
-  width: 20px;
-  height: 20px;
+  height: 15px;
 }
 .slick-dots li.slick-active button {
-  background-color: #000;
-  color: #000;
+  background-color: #fff;
+  color: transparent;
 }
 
 .one-slide {
@@ -241,7 +263,7 @@ nav.navbar .phone-place .callnow p {
   color: #000;
 }
 nav.navbar .phone-place .callnow .text-blue {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 600;
   color: #3a54a5;
 }
@@ -456,7 +478,7 @@ nav.navbar .phone-place .callnow .text-blue {
 }
 
 .logo {
-  width: 180px;
+  width: 110px;
   height: 45px;
 }
 

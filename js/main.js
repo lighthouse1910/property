@@ -1,6 +1,31 @@
 $(document).ready(function() {
   $('.selectpicker1').selectpicker();
-  $('#carouselExampleIndicators').carousel();
+  // $('#carouselExampleIndicators').carousel();
+  $('.slide-banner-top--wrapper').slick({
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    prevArrow: "<i class='fa fa-chevron-left arrow-left'></i>",
+    nextArrow: "<i class='fa fa-chevron-right arrow-right'></i>",
+    speed: 300,
+    margin: 10,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    pauseOnHover: false
+  });
+  $('.about-info--slider_wrapper').slick({
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true,
+    dots: false
+  });
   $('.multiple-items').slick({
     draggable: true,
     autoplay: true,
@@ -41,11 +66,19 @@ $(document).ready(function() {
 });
 
 function hideModal() {
-    const modal = document.querySelector('.overlay');
-    modal.style.display = 'none';
+  const modal = document.querySelector('.overlay');
+  modal.style.display = 'none';
 }
 
 function showModal() {
-    const modal = document.querySelector('.overlay');
-    modal.style.display = 'block';
+  const modal = document.querySelector('.overlay');
+  modal.style.display = 'block';
 }
+
+const support = document.querySelectorAll('.support-content--item');
+const toggleSupport = document.querySelector('.support-content > .toggle-btn');
+toggleSupport.addEventListener('click', function() {
+  support.forEach(item => {
+    item.classList.toggle('active');
+  });
+});
