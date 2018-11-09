@@ -80,10 +80,10 @@
   color: #fff;
 }
 .arrow-left {
-  left: 5px;
+  left: 15px;
 }
 .arrow-right {
-  right: 5px;
+  right: 15px;
 }
 .slick-dots {
   list-style-type: none;
@@ -311,6 +311,7 @@ nav.navbar .phone-place .callnow .text-blue {
 .project-wrapper {
   margin: 5% 0;
   font-weight: 500;
+  padding: 0 15px;
 }
 .project-wrapper .selection ul {
   list-style-type: none;
@@ -344,7 +345,18 @@ nav.navbar .phone-place .callnow .text-blue {
 .project-wrapper .main-content .oneItem .left {
   padding: 0;
   display: flex;
-  flex: 1;
+}
+.project-wrapper .main-content .oneItem .left img {
+  max-height: 180px;
+}
+@media screen and (max-width: 575px) {
+  .project-wrapper .main-content .oneItem .left img {
+    max-height: unset !important;
+  }
+  .menu-top,
+  .contact-top {
+    padding: 0 15px;
+  }
 }
 .project-wrapper .main-content .oneItem .itemDetail h3 {
   font-size: 24px;
@@ -552,7 +564,7 @@ body textarea {
   text-decoration: none;
 }
 .relatedNews h2::before {
-  width: 50px;
+  width: 110px;
   content: '';
   background-color: #fbac2e;
   height: 5px;
@@ -563,13 +575,18 @@ body textarea {
   margin-bottom: 20px;
 }
 .relatedNews ul {
-  padding-left: 15px;
+  padding: 0;
+  list-style-type: none;
   margin: 0;
 }
 .relatedNews ul a {
   color: #000;
   text-decoration: none;
   font-weight: 500;
+  align-items: flex-start;
+}
+.relatedNews ul img {
+  padding: 10px 10px 10px 5px;
 }
 
 .w-220 {

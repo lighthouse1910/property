@@ -12,7 +12,7 @@
 }
 
 .about-info h2 {
-  font-size: 63.5px;
+  font-size: 32px;
   color: #fbac2e;
   margin: 20px 0;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
   font-weight: 600;
 }
 .about-info h2::before {
-  width: 40%;
+  width: 200px;
   content: '';
   background-color: #fbac2e;
   height: 5px;
@@ -33,15 +33,15 @@
 
 @media screen and (max-width: 1024px) {
   .about-info h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
   .contact-banner--slogan {
-    font-size: 28px !important;
+    font-size: 26px !important;
   }
 }
 @media screen and (max-width: 768px) {
   .about-info h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .contact-banner--slogan {
     font-size: 24px !important;
@@ -56,15 +56,15 @@
     transform: rotate(90deg);
   }
   .contact-main-content--left .one-row {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 350px) {
   .about-info h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .contact-banner--slogan {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
   .contact-logo {
     max-width: 125px !important;
@@ -78,13 +78,16 @@
   max-width: 350px;
   margin: auto;
 }
+.contact-logo img {
+  max-width: 180px;
+}
 .contact-main-title {
   font-size: 24px;
   color: #000;
   font-weight: bold;
 }
 .contact-banner--slogan {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -101,7 +104,7 @@ hr {
 }
 
 .one-row {
-  font-size: 36px;
+  font-size: 28px;
   border-bottom: 1px solid black;
   margin-bottom: 10px;
 }
@@ -129,7 +132,7 @@ hr {
 }
 .support-overlay {
   position: fixed;
-  z-index: 100000000000;
+  z-index: 100;
   bottom: 20px;
   right: 20px;
   background-color: red;
@@ -159,7 +162,7 @@ hr {
 }
 @keyframes supportItem {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
   }
   100% {
     transform: translate(0);
@@ -179,7 +182,6 @@ hr {
 }
 
 .one-item--icon {
-  font-size: 40px;
   margin-bottom: 10px;
 }
 .one-item--icon img {
@@ -188,7 +190,7 @@ hr {
 .one-item--text {
   margin: 10px 0;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 .contact-infor h1 {
   text-align: center;
@@ -197,10 +199,16 @@ hr {
 }
 .contact-infor hr {
   width: 200px;
-  border-top: 3px solid black;
+  border-top: 5px solid #535353;
 }
 .contact-infor h2 {
   text-transform: uppercase;
   font-weight: bolder;
   margin: 0px 0 25px;
+}
+.revelant-info h2 {
+  font-size: 28px;
+}
+.search-form .container {
+  padding: 0;
 }

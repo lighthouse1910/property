@@ -37,7 +37,7 @@
 }
 div.oneItem {
   min-height: 160px !important;
-  max-height: 185px;
+  /* max-height: 185px; */
 }
 .oneItem h3 {
   padding-top: 5px;
