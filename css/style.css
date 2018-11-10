@@ -609,3 +609,33 @@ a.nav-link {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.contact-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 50px;
+  height: 250px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 30px;
+}
+.one-block {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+.hide-item {
+  transform: translateY(300px);
+}
+.contact-popup:hover .hide-item {
+  transform: translate(0);
+  transition: 0.4s ease-in-out;
+}

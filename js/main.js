@@ -37,6 +37,17 @@ $(document).ready(function() {
     dots: true,
     pauseOnHover: false
   });
+  $('.show-item').slick({
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false
+  });
   var x = $('.banner-img > img').height();
   $('.banner-wrapper').css('height', x);
   $('.number-only').keydown(function(e) {
