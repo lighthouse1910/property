@@ -21,48 +21,45 @@
   </head>
   <body>
     <div class="landing-page-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="custom-container-full d-flex justify-content-between w-100">
-          <a class="navbar-brand" href="#">
-            <img class="img-fluid" src="images/Macland logo-02.png" />
+      <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand">
+          <a href="#">
+            <img src="images/Macland logo-02.png" alt="" class="img-fluid" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active ">
-                <a class="nav-link" href="#overview">Tổng quan</a>
-              </li>
-              <li class="nav-item">
-                <a href="#location" class="nav-link">Vị trí</a>
-              </li>
-              <li class="nav-item">
-                <a href="#widget" class="nav-link">Tiện ích</a>
-              </li>
-              <li class="nav-item">
-                <a href="#space" class="nav-link">mặt bằng</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Liên hệ</a>
-              </li>
-              <li class="nav-item">
-                <div class="phone-wrapper">
-                  <i class="fa fa-phone-volume"></i> <span>090 216 6747</span>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
+        <div class="Navbar__Link Navbar__Link-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="d-nav-content">
+          <ul class="d-navbar-nav">
+            <li class="d-nav-item active ">
+              <a class="d-nav-link" href="#overview">Tổng quan</a>
+            </li>
+
+            <li class="d-nav-item">
+              <a href="#location" class="d-nav-link">Vị trí</a>
+            </li>
+
+            <li class="d-nav-item">
+              <a href="#widget" class="d-nav-link">Tiện ích</a>
+            </li>
+
+            <li class="d-nav-item">
+              <a href="#space" class="d-nav-link">mặt bằng</a>
+            </li>
+
+            <li class="d-nav-item">
+              <a href="#contact" class="d-nav-link">Liên hệ</a>
+            </li>
+
+            <li class="d-nav-item">
+              <div class="phone-wrapper">
+                <i class="fa fa-phone-volume"></i> <span>090 216 6747</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="top-heading pdt-60">
         <div class="custom-container-full">
           <div class="row align-items-center h-100vh">
@@ -278,7 +275,9 @@
                 class="col-md-7 d-flex align-items-end justify-content-center"
               >
                 <div class="bottom-title-wrapper text-center">
-                  <div class="bottom-title">KHÁCH HÀNG QUAN TÂM VUI LÒNG</div>
+                  <div class="bottom-title mt-sm-5">
+                    KHÁCH HÀNG QUAN TÂM VUI LÒNG
+                  </div>
                   <div class="bottom-title">LIÊN HỆ VĂN PHÒNG CHỦ ĐẦU TƯ</div>
                   <div class="bottom-infor-wrapper mt-5">
                     <div class="bottom-infor">
@@ -305,6 +304,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
+        // $('.d-nav-item').on('click', function() {
+        //   $('.d-nav-item').removeClass('active');
+        //   this.addClass('active');
+        // });
         $('.slick-wrapper').slick({
           draggable: true,
           autoplay: true,
@@ -323,14 +326,35 @@
       });
       $(window).on('scroll', function() {
         if ($(window).scrollTop()) {
-          $('nav').addClass('scrolled');
-          $('nav .navbar-brand img').attr('src', 'images/LienHe_03.png');
-          $('nav .navbar-brand img').css('max-width', 70);
+          $('.Navbar').addClass('scrolled');
+          $('.Navbar__Link-brand img').attr('src', 'images/LienHe_03.png');
+          $('.Navbar__Link-brand img').css('max-width', 70);
         } else {
-          $('nav').removeClass('scrolled');
-          $('nav .navbar-brand img').attr('src', 'images/Macland logo-02.png');
-          $('nav .navbar-brand img').css('max-width', 120);
+          $('.Navbar').removeClass('scrolled');
+          $('.Navbar__Link-brand img').attr(
+            'src',
+            'images/Macland logo-02.png'
+          );
+          $('.Navbar__Link-brand img').css('max-width', 120);
         }
+      });
+      function classToggle() {
+        const navs = document.querySelectorAll('.d-navbar-nav');
+
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      }
+      document
+        .querySelector('.Navbar__Link-toggle')
+        .addEventListener('click', classToggle);
+      const navClick = document.querySelectorAll('.d-nav-item');
+      function clearClass() {
+        navClick.forEach(item => item.classList.remove('active'));
+      }
+      navClick.forEach(item => {
+        item.addEventListener('click', function() {
+          clearClass();
+          item.classList.add('active');
+        });
       });
     </script>
   </body>
