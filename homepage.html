@@ -709,6 +709,10 @@
         <div class="one-block"><i class="fa fa-comments-dollar"></i></div>
       </div>
     </div>
+    <div class="advertisement">
+      <img class="img-fluid" src="images/bdshot5.png">
+      <span class="close-ads mr-auto" onclick="closeAds()">X</span>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -729,6 +733,22 @@
       function validateNumber(id) {
         const numbers = /^[0-9]+$/;
         const elementId = document.getElementById(id);
+      }
+      const ads = document.querySelector('.advertisement');
+      const popup = document.querySelector('.contact-popup');
+      popup.addEventListener('mouseover', () => {
+        ads.classList.add('b-280');
+      });
+      popup.addEventListener('mouseout', () => {
+        ads.classList.remove('b-280');
+      })
+      function closeAds() {
+        ads.setAttribute("style","display: none");
+      };
+      window.onload = function(){
+        setTimeout( function(){
+          ads.setAttribute("style","display:block");
+        }, 10000);
       }
     </script>
   </body>
