@@ -696,12 +696,7 @@
     </div>
     <div class="contact-popup">
       <div class="show-item">
-        <div class="one-block " onclick="showModal()">
-          <i class="fa fa-phone"></i>
-          
-        </div>
-        <div class="one-block" onclick="showModal()"><i class="fa fa-envelope"></i></div>
-        <div class="one-block" onclick="showModal()"><i class="fa fa-comments-dollar"></i></div>
+        <div class="one-block "><i class="fa fa-phone"></i></div>
       </div>
       <div class="hide-item">
         <div class="one-block"><i class="fa fa-phone"></i></div>
@@ -709,8 +704,47 @@
         <div class="one-block"><i class="fa fa-comments-dollar"></i></div>
       </div>
     </div>
+    <div class="contact-popup-tooltip">
+      <div class="tooltip-hide-item">
+        <div class="one-tooltip">
+          <span> tel: +841273981273 </span> <span class="triangle-right"></span>
+        </div>
+        <div class="one-tooltip">
+          <span> email: lighthouse@outlook.com </span>
+          <span class="triangle-right"></span>
+        </div>
+        <div class="one-tooltip">
+          <span> facebook: https://facebook.com/mikomijio </span>
+          <span class="triangle-right"></span>
+        </div>
+      </div>
+      <div class="tooltip-show-item">
+        <div class="one-tooltip active">
+          <span class="close-tooltip">X</span>
+          <span>
+            Cần thông tin về dự án bất động sản? Hãy liên hệ với chúng tôi!
+          </span>
+          <span class="triangle-right"></span>
+        </div>
+      </div>
+    </div>
+    <div class="form-email">
+      <div class="form-email-wrapper">
+        <form>
+          <div class="form-email-header d-flex justify-content-between">
+            <span class="form-email-title"> Contact Form </span> 
+            <span class="form-email-close" onclick="closeEmailForm()">X</span>
+          </div>
+          <div class="input-wrapper"><input type="text" class="w-100" /></div>
+          <div class="input-wrapper"><input type="text" class="w-100" /></div>
+          <div class="input-wrapper"><input type="text" class="w-100" /></div>
+          <div class="input-wrapper"><input type="text" class="w-100" /></div>
+          <div class="btn-wrapper"><button class="btn-submit">Gửi</button></div>
+        </form>
+      </div>
+    </div>
     <div class="advertisement">
-      <img class="img-fluid" src="images/bdshot5.png">
+      <img class="img-fluid" src="images/bdshot5.png" />
       <span class="close-ads mr-auto" onclick="closeAds()">X</span>
     </div>
     <!-- Optional JavaScript -->
@@ -741,15 +775,49 @@
       });
       popup.addEventListener('mouseout', () => {
         ads.classList.remove('b-280');
-      })
+      });
+
       function closeAds() {
-        ads.setAttribute("style","display: none");
-      };
-      window.onload = function(){
-        setTimeout( function(){
-          ads.setAttribute("style","display:block");
-        }, 10000);
+        ads.setAttribute('style', 'display: none');
       }
-    </script>
+      window.onload = function() {
+        setTimeout(function() {
+          ads.setAttribute('style', 'display:block');
+          if (FormEmail.classList.contains('form-show')) {
+            ads.classList.add('b-350');
+          }
+        }, 10000);
+      };
+      const closeTooltip = document.querySelector(
+        '.tooltip-show-item .close-tooltip'
+      );
+      closeTooltip.addEventListener('click', function() {
+        document
+          .querySelector('.tooltip-show-item .one-tooltip')
+          .classList.remove('active');
+      });
+      const showTooltip = document.querySelectorAll(
+        '.tooltip-hide-item > .one-tooltip'
+      );
+      const hideItem = document.querySelectorAll('.hide-item > .one-block');
+      for (let i = 0; i < hideItem.length; i++) {
+        hideItem[i].addEventListener('mouseover', function() {
+          showTooltip[i].classList.add('active');
+        });
+        hideItem[i].addEventListener('mouseout', function() {
+          showTooltip[i].classList.remove('active');
+        });
+      }
+      const FormEmail = document.querySelector('.form-email');
+      hideItem[1].addEventListener('click', function() {
+        FormEmail.classList.add('form-show');
+        ads.classList.add('b-350');
+        showTooltip.forEach(item => item.classList.remove('active'));
+      });
+      function closeEmailForm(){
+        FormEmail.classList.remove('form-show');
+        ads.classList.remove('b-350');
+        }    
+      </script>
   </body>
 </html>

@@ -658,6 +658,9 @@ a.nav-link {
 .b-280 {
   bottom: 280px !important;
 }
+.b-350 {
+  bottom: 350px !important;
+}
 .close-ads {
   cursor: pointer;
   position: absolute;
@@ -670,4 +673,108 @@ a.nav-link {
   border-radius: 50%;
   color: white;
   text-align: center;
+}
+
+.one-tooltip.active {
+  display: flex;
+}
+.one-tooltip {
+  height: 50px;
+  width: 320px;
+  word-break: break-word;
+  padding: 0 10px;
+  border: 1px solid #2e42dc;
+  color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  background-color: #0062cc;
+  display: none;
+  right: 80px;
+  align-items: center;
+  z-index: 400;
+}
+.tooltip-hide-item .one-tooltip:first-of-type {
+  bottom: 200px;
+}
+.tooltip-hide-item .one-tooltip:nth-of-type(2) {
+  bottom: 140px;
+}
+.tooltip-hide-item .one-tooltip:last-of-type {
+  bottom: 80px;
+}
+.tooltip-show-item .one-tooltip {
+  bottom: 20px;
+}
+.close-tooltip {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border-radius: 50%;
+  background: red;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: 13px;
+  bottom: 20px;
+  background: transparent;
+  border-left: 10px solid #0062cc;
+}
+.form-email {
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0062cc;
+  z-index: 300;
+}
+.form-email .input-wrapper {
+  margin-top: 10px;
+}
+.form-email input {
+  border: 1px solid #0062cc;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 5px;
+}
+.form-email.form-show {
+  display: block;
+}
+.form-email-close {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: red;
+  border: 1px solid #131944;
+}
+.form-email .btn-wrapper {
+  margin-top: 10px;
+  text-align: center;
+}
+.form-email .btn-submit {
+  border: 1px solid #0062cc;
+  border-radius: 5px;
+  padding: 5px 25px;
+  color: #0062cc;
+}
+.form-email .btn-submit:hover {
+  background-color: #efae34;
 }
